@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Country code
+            </th>
+            <th>
+                Country name
+            </th>
+        </tr>
+    </thead>
+    <tr ng-repeat="country in allCountries"
+        ng-click="showDetails(country)">
+        <td>{{country.countryCode}}</td>
+        <td>{{country.countryName}}</td>
+    </tr>
+</table>
+
+<ul ng-if="selectedCountry != null">
+    <li> {{selectedCountry.countryName}}</li>
+</ul>
