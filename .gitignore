@@ -1,3 +1,5 @@
 /app/bower_components/
 /node_modules/
 *.log
+/nbproject/private/
+bower_components/
